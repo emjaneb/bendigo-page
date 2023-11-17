@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bendigo</title>
+    <style>
+        html {
+            background: linear-gradient(-225deg, #7085B6 0%, #87A7D9 50%, #DEF3F8 100%);
+        }
+
+        h1 {
+            font-size: 75px;
+            font-family: croist;
+            font-weight: 100;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        h2 {
+            display: block;
+            text-align: center;
+            font-family: Bahnschrift Light;
+            margin: 0px 0px 20px 0px;
+        }
+
+        h3 {
+            display: block;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        h6 {
+            display: block;
+            text-align: center;
+            padding: 10px;
+            margin: 0px 20px;
+            font-size: 14px;
+            font-weight: 100;
+            font-style: italic;
+        }
+
+        p {
+            display: block;
+            text-align: center;
+            padding: 10px;
+            margin: 20px;
+            font-size: 15px;
+            line-height: 150%;
+        }
+
+        hr {
+            width: 70%;
+            margin: 0 auto;
+            height: 2px;
+            background-color: #72728f;
+            border-color: transparent;
+            border-radius: 50px;
+            opacity: 20%;
+        }
+
+        a {
+            color: #ffffff;
+            font-weight: 700;
+        }
+
+        a:hover {
+            font-style: italic;
+        }
+
+        footer {
+            text-align: center;
+            font-family: Bahnschrift Light;
+            margin: 30px 0px;
+        }
+
+        .richest {
+            font-style: italic;
+            text-decoration: underline;
+        }
+
+        .historyBox {
+            box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+            background-color: #272044;
+            border-radius: 10px;
+            color: #ffffff;
+            width: 850px;
+            padding: 20px;
+            margin: 35px auto;
+            font-family: 'Bahnschrift Light';
+            display: block;
+        }
+
+        .learnMore {
+            display: block;
+            margin: 20px auto;
+            padding: 15px 20px;
+            color: #000000;
+            font-size: 15px;
+            font-weight: 700;
+            font-family: Bahnschrift Light;
+            border: 1px solid #272044;
+            border-radius: 30px;
+            background: #ffffff;
+            box-shadow: #4c4c4d 2px 5px 5px;
+            cursor: pointer;
+            transition: all 100ms ease-in-out;
+        }
+
+        .body-image {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
+        .learnMore:hover {
+            background: #272044;
+            color: #ffffff;
+            border: 2px solid #ffffff;
+        }
+
+        .galleryTitle {
+            text-align: center;
+            font-family: Bahnschrift Light;
+            font-size: 30px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50vh;
+            margin-bottom: 70px;
+            margin: 60px;
+        }
+
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 300px);
+            grid-template-rows: repeat(2, 200px);
+            grid-gap: 10px;
+            position: center;
+        }
+
+        .photo-grid img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .photo-grid .caption {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .photo-grid .caption:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            border-radius: 10px;
+        }
+
+        .photo-grid .caption h5 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-weight: 100;
+            font-family: Bahnschrift Light;
+            font-size: 15px;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .photo-grid .caption:hover:before {
+            opacity: 1;
+        }
+
+        .photo-grid .caption:hover h5 {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Bendigo</h1>
+
+    <h2>
+        Come and tour one of Victoria's <span class="richest">richest</span> Gold Rush towns
+    </h2>
+
+    <hr />
+
+    <div class="historyBox">
+        <h3>
+            A Brief History
+        </h3>
+
+        <p>Bendigo <em>(Ben-dig-oh)</em> is a city in Victoria, Australia, located in the Bendigo Valley near the
+            geographical
+            centre of the state and approximately 150 kilometres (93 miles) north-west of Melbourne, the state
+            capital.<br />
+            <br />
+            As of 2019, Bendigo had an urban population of 100,991 making it Australia's 19th-largest city,
+            fourth-largest inland city, and the fourth-most populous city in Victoria. It is the administrative
+            centre
+            of
+            the City of Greater
+            Bendigo, which encompasses outlying towns spanning an area of approximately 3,000 km2 (1,158 sq miles)
+            and
+            over
+            111,000 people.<br />
+            <br />
+            The traditional owners of the land are the Dja Dja Wurrung <em>(Ja-Ja-war-rung)</em> people are
+            Aboriginal
+            Australians.<br />
+            <br />
+            The discovery of gold on Bendigo Creek in 1851 transformed the area from a sheep station into one of
+            colonial Australia's largest boomtowns. News of the finds intensified the Victorian gold rush, bringing
+            an
+            influx of
+            migrants from around the world, particularly Europe and China. Bendigo became eastern Australia's
+            largest
+            19th-century gold-mining economy and the wealth generated during this period is reflected today in the
+            city's
+            Victorian
+            architectural heritage. From 1853 until 1891, Bendigo was officially named Sandhurst.<br />
+            <br />
+            Bendigo's boom period lasted until the early 20th century and after a temporary decline in population
+            and
+            employment, renewed growth occurred from the 1930s as the city consolidated as a manufacturing and
+            regional
+            service
+            centre. Although gold mining continues, recent population growth has been most heavily concentrated in
+            suburban
+            areas. With
+            the completion of the Calder Freeway linking Melbourne and Bendigo in 2009, and the region's proximity
+            to
+            Melbourne, Bendigo has become one of the fastest-growing regional centres in Victoria.<br />
+            <br />
+            <a href="https://en.wikipedia.org/wiki/Bendigo" target="_blank">Read more on Wikipedia!</a>
+        </p>
+
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/089/757/original/Bendigo_City_Centre_Fountain_View_.jpg?1689297141"
+            alt="Image of Alexandra Fountain in Bengido, Australia." class="body-image">
+        <h6>Alexandra Fountain in Bendigo</h6>
+        <button class="learnMore">Learn more</button>
+    </div>
+
+    <hr />
+
+    <div class="galleryTitle">
+        <h3>Things to do</h3>
+    </div>
+
+    <div class="container">
+        <div class="photo-grid">
+            <div class="caption">
+                <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/089/586/original/Central_Deborah.jpg?1689221010"
+                    alt="Central Deborah Gold Mine">
+                <h5>Central Deborah<br />Gold Mine<br />
+                    <a href="https://www.central-deborah.com/" target="_blank">Learn more</a>
+                </h5>
+            </div>
+            <div class="caption">
+                <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/089/587/original/Golden_Dragon.jpg?1689221256"
+                    alt="Golden Dragon Museum">
+                <h5>Golden Dragon Museum<br />
+                    <a href="https://www.goldendragonmuseum.org/" target="_blank">Learn more</a>
+                </h5>
+            </div>
+
+            <div class="caption">
+                <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/089/590/original/Great_Stupa_2.jpg?1689221761"
+                    alt="The Great Stupa of Universal Compassion">
+                <h5>The Great Stupa of Universal Compassion<br />
+                    <a href="https://stupa.org.au/" target="blank">Learn more</a>
+                </h5>
+            </div>
+
+            <div class="caption">
+                <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/089/593/original/Cathedral_2.jpg?1689222114"
+                    alt="Sacred Heart Cathedral">
+                <h5>Sacred Heart Cathedral<br />
+                    <a href="https://www.sandhurst.catholic.org.au/our-churches/cathedral" target="_blank">Learn
+                        more</a>
+                </h5>
+            </div>
+
+            <div class="caption">
+                <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/089/588/original/Botanic_Gardens.jpg?1689221538"
+                    alt="Bendigo Botanic Gardens">
+                <h5>Bendigo Botanic Gardens<br />
+                    <a href="https://www.bendigo.vic.gov.au/Things-To-Do/Parks-and-Gardens/bendigo-botanic-gardens-white-hills"
+                        target="_blank">Learn more</a>
+                </h5>
+            </div>
+
+            <div class="caption">
+                <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/089/591/original/Art_Gallery.jpg?1689221834"
+                    alt="Bendigo Art Gallery">
+                <h5>Bendigo Art Gallery<br />
+                    <a href="https://www.bendigoregion.com.au/bendigo-art-gallery" target="_blank">Learn more</a>
+                </h5>
+            </div>
+
+        </div>
+    </div>
+
+    <hr />
+
+    <footer>Coded by <strong>Emma Bartley</strong></footer>
+
+    <script>
+        document.querySelector('.learnMore').addEventListener('click', function () {
+            let name = prompt('What is your name?');
+            name = name.trim()
+            if (name !== null) {
+                if (name.length === 0) {
+                    alert('Please try entering your name again.');
+                } else {
+                    let email = prompt('Thanks ' + name + '! What is your email?');
+                    email = email.toLowerCase().trim()
+                    if (email !== null) {
+                        if (email.length === 0) {
+                            alert('Please try entering your email again.');
+                        } else {
+                            alert('Thanks ' + name + '! We will be in touch soon!');
+                        }
+                    } else {
+                        alert('Please try entering your details again.');
+                    }
+                }
+            } else {
+                alert('Please try entering your details again.');
+            }
+        });
+    </script>
+
+</body>
+
+</html>
